@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfólio | Creative Developer & Interactive Designer</title>
+  <meta name="description" content="Portfólio pessoal imersivo na interseção entre design tridimensional, código e interatividade.">
+  
+  <!-- Fontes do Google: Syne (Títulos Y2K) e Space Grotesk (Texto Técnico) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Syne:wght@700;800&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Canvas WebGL de Fundo (Three.js) -->
+  <canvas id="webgl-canvas"></canvas>
+
+  <!-- Cursor Personalizado Cinematográfico com Inércia -->
+  <div class="custom-cursor-dot" id="cursorDot"></div>
+  <div class="custom-cursor-ring" id="cursorRing"></div>
+
+  <!-- Iluminação e Névoa de Fundo CSS -->
+  <div class="ambient-glow" aria-hidden="true"></div>
+
+  <!-- SEÇÃO DE TOPO (HERO) -->
+  <header class="hero-section" id="hero">
+    
+    <!-- Top Bar / Tag Minimalista -->
+    <div class="hero-top-badge interactive-hover">
+      <span class="status-indicator"></span>
+      <span class="badge-text">Estudante 2º Ano • Colégio Raphael Di Santo Garcia</span>
+      <span class="badge-separator">/</span>
+      <span class="badge-lang">Inglês Fluente</span>
+    </div>
+
+    <!-- Container Central com Paralaxe 3D e Título Y2K Cromado -->
+    <div class="hero-center-container" id="heroParallaxContainer">
+      
+      <!-- Subtítulo de Cargo -->
+      <p class="hero-role-label">Creative Developer &amp; Interactive Designer</p>
+
+      <!-- Título Principal Cromado com Efeito 3D Metálico e Sparkles -->
+      <div class="hero-title-wrapper interactive-hover" id="titleWrapper">
+        <h1 class="hero-chrome-title" id="heroTitle" data-text="PORTFÓLIO">
+          PORTFÓLIO
+        </h1>
+
+        <!-- Sparkles / Brilhos Pontuais Retrô Y2K nas arestas das letras -->
+        <div class="sparkle sparkle-1" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none"><path d="M12 0L14.5 9.5L24 12L14.5 14.5L12 24L9.5 14.5L0 12L9.5 9.5L12 0Z" fill="#FFFFFF"/></svg>
+        </div>
+        <div class="sparkle sparkle-2" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none"><path d="M12 0L14.5 9.5L24 12L14.5 14.5L12 24L9.5 14.5L0 12L9.5 9.5L12 0Z" fill="#FFB7C5"/></svg>
+        </div>
+        <div class="sparkle sparkle-3" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none"><path d="M12 0L14.5 9.5L24 12L14.5 14.5L12 24L9.5 14.5L0 12L9.5 9.5L12 0Z" fill="#E6E6FA"/></svg>
+        </div>
+        <div class="sparkle sparkle-4" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none"><path d="M12 0L14.5 9.5L24 12L14.5 14.5L12 24L9.5 14.5L0 12L9.5 9.5L12 0Z" fill="#FFFFFF"/></svg>
+        </div>
+      </div>
+
+      <!-- Frase de Apresentação Oficial -->
+      <p class="hero-description">
+        "Criando experiências digitais imersivas na interseção entre design tridimensional, código e interatividade."
+      </p>
+
+      <!-- Botão de Chamada para Ação (CTA) -->
+      <div class="hero-cta-wrapper">
+        <a href="#experiencia" class="hero-cta-btn interactive-hover" id="heroCta">
+          <span class="btn-background"></span>
+          <span class="btn-glow"></span>
+          <span class="btn-text">
+            <span>Iniciar Experiência</span>
+            <span class="btn-arrow">✦</span>
+          </span>
+        </a>
+      </div>
+
+    </div>
+
+    <!-- Indicadores Técnicos do Rodapé da Hero -->
+    <div class="hero-footer-info">
+      <div class="tech-tag"><span>SYS:</span> WEBGL 3D ACTIVE</div>
+      <div class="tech-tag"><span>PALETTE:</span> CHROME &bull; CYBER DARK</div>
+      <div class="tech-tag"><span>FPS:</span> 60.0 REALTIME</div>
+    </div>
+
+  </header>
+
+  <!-- Biblioteca Three.js via CDN (para renderização 3D contínua pura) -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <!-- Script Principal -->
+  <script src="main.js"></script>
+</body>
+</html>
